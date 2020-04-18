@@ -1,0 +1,62 @@
+2020-04-18 11:23:52,577 [INFO] [main] com.framework.ApiApplication [StartupInfoLogger.java : 50] Starting ApiApplication on DESKTOP-79UE94M with PID 3172 (started by o in F:\1. MyBatis3.4.6、SpringBoot2.0.2、SpringMVC5.0.6、Shiro1.4、Swagger2.7、Vue2.x、Bootstrap、MySQL\universal-framework)
+2020-04-18 11:23:52,587 [INFO] [main] com.framework.ApiApplication [SpringApplication.java : 663] The following profiles are active: dev
+2020-04-18 11:23:56,905 [WARN] [main] org.springframework.data.convert.CustomConversions [CustomConversions.java : 216] Registering converter from class org.joda.time.LocalDateTime to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-04-18 11:23:56,922 [WARN] [main] org.springframework.data.convert.CustomConversions [CustomConversions.java : 216] Registering converter from class org.joda.time.LocalDateTime to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-04-18 11:23:56,934 [WARN] [main] org.springframework.data.convert.CustomConversions [CustomConversions.java : 216] Registering converter from class org.joda.time.LocalDateTime to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-04-18 11:23:57,467 [ERROR] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 182] Failed to start connector [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.framework.ApiApplication.main(ApiApplication.java:15)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2020-04-18 11:23:57,485 [ERROR] [main] o.s.boot.diagnostics.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java : 42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2020-04-18 11:25:33,863 [INFO] [main] com.framework.ApiApplication [StartupInfoLogger.java : 50] Starting ApiApplication on DESKTOP-79UE94M with PID 11832 (started by o in F:\1. MyBatis3.4.6、SpringBoot2.0.2、SpringMVC5.0.6、Shiro1.4、Swagger2.7、Vue2.x、Bootstrap、MySQL\universal-framework)
+2020-04-18 11:25:33,868 [INFO] [main] com.framework.ApiApplication [SpringApplication.java : 663] The following profiles are active: dev
+2020-04-18 11:25:38,206 [WARN] [main] org.springframework.data.convert.CustomConversions [CustomConversions.java : 216] Registering converter from class org.joda.time.LocalDateTime to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-04-18 11:25:38,222 [WARN] [main] org.springframework.data.convert.CustomConversions [CustomConversions.java : 216] Registering converter from class org.joda.time.LocalDateTime to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-04-18 11:25:38,234 [WARN] [main] org.springframework.data.convert.CustomConversions [CustomConversions.java : 216] Registering converter from class org.joda.time.LocalDateTime to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-04-18 11:25:38,780 [INFO] [main] com.framework.ApiApplication [StartupInfoLogger.java : 59] Started ApiApplication in 5.572 seconds (JVM running for 6.353)
+2020-04-18 12:05:19,178 [INFO] [main] com.framework.ApiApplication [StartupInfoLogger.java : 50] Starting ApiApplication on DESKTOP-79UE94M with PID 9228 (started by o in F:\1. MyBatis3.4.6、SpringBoot2.0.2、SpringMVC5.0.6、Shiro1.4、Swagger2.7、Vue2.x、Bootstrap、MySQL\universal-framework)
+2020-04-18 12:05:19,185 [INFO] [main] com.framework.ApiApplication [SpringApplication.java : 663] The following profiles are active: dev
+2020-04-18 12:05:24,519 [WARN] [main] org.springframework.data.convert.CustomConversions [CustomConversions.java : 216] Registering converter from class org.joda.time.LocalDateTime to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-04-18 12:05:24,537 [WARN] [main] org.springframework.data.convert.CustomConversions [CustomConversions.java : 216] Registering converter from class org.joda.time.LocalDateTime to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-04-18 12:05:24,551 [WARN] [main] org.springframework.data.convert.CustomConversions [CustomConversions.java : 216] Registering converter from class org.joda.time.LocalDateTime to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-04-18 12:05:25,298 [INFO] [main] com.framework.ApiApplication [StartupInfoLogger.java : 59] Started ApiApplication in 6.941 seconds (JVM running for 8.113)
